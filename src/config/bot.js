@@ -23,8 +23,8 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Vibrant Twilight",     // this is what people actually see
+        name: "Vibrant Twilight", // required by Discord API, not shown in the client
+        state: "I wish I could help...",     // this is what people actually see
         type: 3,               // Custom
       },
     ],
@@ -68,9 +68,9 @@ export const botConfig = {
 
     // Embed colors by application status.
     statusColors: {
-      pending: "#FFA500",
-      approved: "#00FF00",
-      denied: "#FF0000",
+      pending: "#FFEE11",
+      approved: "#33DD99",
+      denied: "#DD4444",
     },
 
     // How long users must wait before submitting another application (hours).
@@ -93,14 +93,14 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#FFEE11",
+      secondary: "#FFEE11",
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
-      error: "#ED4245",
-      warning: "#FEE75C",
-      info: "#3498DB",
+      success: "#33DD99",
+      error: "#DD4444",
+      warning: "#FFEE11",
+      info: "#0077DD",
 
       // Neutral utility colors.
       light: "#FFFFFF",
@@ -117,31 +117,31 @@ export const botConfig = {
 
       // Feature-specific colors.
       giveaway: {
-        active: "#57F287",
-        ended: "#ED4245",
+        active: "#FFEE11",
+        ended: "#FFBB00",
       },
       ticket: {
-        open: "#57F287",
-        claimed: "#FAA61A",
-        closed: "#ED4245",
-        pending: "#99AAB5",
+        open: "#33DD99",
+        claimed: "#BB88EE",
+        closed: "#DD4444",
+        pending: "#FFEE11",
       },
-      economy: "#F1C40F",
-      birthday: "#E91E63",
-      moderation: "#9B59B6",
+      economy: "#BBDD22",
+      birthday: "#FFAACC",
+      moderation: "#FF7722",
 
       // Ticket priority color mapping.
       priority: {
-        none: "#95A5A6",
-        low: "#3498db",
-        medium: "#2ecc71",
-        high: "#f1c40f",
-        urgent: "#e74c3c",
+        none: "#808080",
+        low: "#FFBB00",
+        medium: "#FF7722",
+        high: "#BB88EE",
+        urgent: "#0077DD",
       },
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Kagamine Len",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -223,27 +223,27 @@ export const botConfig = {
     priorities: {
       none: {
         emoji: "⚪",
-        color: "#95A5A6",
+        color: "#808080",
         label: "None",
       },
       low: {
         emoji: "🟢",
-        color: "#2ECC71",
+        color: "#FFBB00",
         label: "Low",
       },
       medium: {
         emoji: "🟡",
-        color: "#F1C40F",
+        color: "#FF7722",
         label: "Medium",
       },
       high: {
         emoji: "🔴",
-        color: "#E74C3C",
+        color: "#BB88EE",
         label: "High",
       },
       urgent: {
         emoji: "🚨",
-        color: "#E91E63",
+        color: "#0077DD",
         label: "Urgent",
       },
     },
@@ -453,7 +453,7 @@ export const botConfig = {
     leveling: true,
     moderation: true,
     logging: true,
-    welcome: true,
+    welcome: false,
 
     // Community engagement systems.
     tickets: true,
@@ -462,8 +462,8 @@ export const botConfig = {
     counter: true,
 
     // Security and self-service systems.
-    verification: true,
-    reactionRoles: true,
+    verification: false,
+    reactionRoles: false,
     joinToCreate: true,
 
     // Utility/quality-of-life modules.
